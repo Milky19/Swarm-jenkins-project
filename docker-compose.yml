@@ -1,0 +1,26 @@
+version: '3.8'
+services: 
+  azure:
+    image: hanvitha/azure
+    ports:
+      - "80:80"
+    deploy:
+      replicas: 3
+  gcp:
+    image: hanvitha/gcp
+    ports:
+      - "81:80"
+    deploy:
+      replicas: 3
+  blockchain:
+    image: hanvitha/blockchain
+    ports:
+      - "82:80"
+    deploy:
+      replicas: 3
+  datascience:
+    image: hanvitha/datascience
+    ports:
+      - "83:80"
+    deploy:
+      replicas: 3
